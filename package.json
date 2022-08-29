@@ -1,0 +1,17 @@
+{
+  "name": "apex",
+  "version": "1.0.0",
+  "description": "Test automation framework for interview",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "playwright test --config=playwright.config.ts --project=Chromium --reporter=html",
+    "test:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "test:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "test:apex": "playwright test --config=playwright.config.ts"
+  },
+  "author": "FJLRivera86",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.25.1"
+  }
+}
